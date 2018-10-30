@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49C5842A2187DD09000C96AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C584292187DD09000C96AC /* AppDelegate.swift */; };
+		49C584312187DD0C000C96AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C584302187DD0C000C96AC /* Assets.xcassets */; };
+		49C584342187DD0C000C96AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C584322187DD0C000C96AC /* LaunchScreen.storyboard */; };
+		49C5843F2187DD0D000C96AC /* lindembergsPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5843E2187DD0D000C96AC /* lindembergsPlayerTests.swift */; };
+		49C585D22187DF3C000C96AC /* libDeezer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C585412187DF3B000C96AC /* libDeezer.a */; };
+		49C585D32187DF3C000C96AC /* DZRResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49C585612187DF3B000C96AC /* DZRResources.bundle */; };
+		49C585D42187DF3C000C96AC /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 49C585632187DF3B000C96AC /* home.html */; };
+		49C585D52187DF3C000C96AC /* menu.html in Resources */ = {isa = PBXBuildFile; fileRef = 49C585642187DF3B000C96AC /* menu.html */; };
+		49C585D62187DF3C000C96AC /* userguide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 49C585652187DF3B000C96AC /* userguide.pdf */; };
+		49C585D92187E3E5000C96AC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C585D82187E3E5000C96AC /* CoreAudio.framework */; };
+		49C585DB2187E3FB000C96AC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C585DA2187E3FB000C96AC /* AudioToolbox.framework */; };
+		49C585DD2187E419000C96AC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C585DC2187E419000C96AC /* SystemConfiguration.framework */; };
+		49C585DF2187E465000C96AC /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C585DE2187E465000C96AC /* libicucore.tbd */; };
+		49C585E12187E475000C96AC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C585E02187E475000C96AC /* MediaPlayer.framework */; };
+		49C585E62187EA59000C96AC /* ArtistFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C585E52187EA59000C96AC /* ArtistFeed.swift */; };
+		49C585E92187EE5C000C96AC /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C585E82187EE5C000C96AC /* Artist.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49C5843B2187DD0D000C96AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49C5841E2187DD09000C96AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49C584252187DD09000C96AC;
+			remoteInfo = lindembergsPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49C584262187DD09000C96AC /* lindembergsPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lindembergsPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C584292187DD09000C96AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49C584302187DD0C000C96AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49C584332187DD0C000C96AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49C584352187DD0C000C96AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C5843A2187DD0D000C96AC /* lindembergsPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lindembergsPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C5843E2187DD0D000C96AC /* lindembergsPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lindembergsPlayerTests.swift; sourceTree = "<group>"; };
+		49C584402187DD0D000C96AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C585412187DF3B000C96AC /* libDeezer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDeezer.a; sourceTree = "<group>"; };
+		49C585432187DF3B000C96AC /* DZRPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPlaylist.h; sourceTree = "<group>"; };
+		49C585442187DF3B000C96AC /* Deezer+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Deezer+Compatibility.h"; sourceTree = "<group>"; };
+		49C585452187DF3B000C96AC /* DeezerConnect+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeezerConnect+Compatibility.h"; sourceTree = "<group>"; };
+		49C585462187DF3B000C96AC /* DeezerRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerRequestDelegate.h; sourceTree = "<group>"; };
+		49C585472187DF3B000C96AC /* DZRPodcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPodcast.h; sourceTree = "<group>"; };
+		49C585482187DF3B000C96AC /* DZRArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRArtist.h; sourceTree = "<group>"; };
+		49C585492187DF3B000C96AC /* DZREpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZREpisode.h; sourceTree = "<group>"; };
+		49C5854A2187DF3B000C96AC /* DZRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPlayer.h; sourceTree = "<group>"; };
+		49C5854B2187DF3B000C96AC /* NSBundle+DZRBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DZRBundle.h"; sourceTree = "<group>"; };
+		49C5854C2187DF3B000C96AC /* DZRObject+Compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DZRObject+Compatibility.h"; sourceTree = "<group>"; };
+		49C5854D2187DF3B000C96AC /* DZRGenericCancelable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRGenericCancelable.h; sourceTree = "<group>"; };
+		49C5854E2187DF3B000C96AC /* DZRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRModel.h; sourceTree = "<group>"; };
+		49C5854F2187DF3B000C96AC /* DZRCancelable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRCancelable.h; sourceTree = "<group>"; };
+		49C585502187DF3B000C96AC /* DZRObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRObject.h; sourceTree = "<group>"; };
+		49C585512187DF3B000C96AC /* DZRNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRNetworkRequest.h; sourceTree = "<group>"; };
+		49C585522187DF3B000C96AC /* DZRManagedRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRManagedRadio.h; sourceTree = "<group>"; };
+		49C585532187DF3B000C96AC /* NSError+DZRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DZRPlayer.h"; sourceTree = "<group>"; };
+		49C585542187DF3B000C96AC /* DZRRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRRequestManager.h; sourceTree = "<group>"; };
+		49C585552187DF3B000C96AC /* DZRRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRRadio.h; sourceTree = "<group>"; };
+		49C585562187DF3B000C96AC /* DZRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRUser.h; sourceTree = "<group>"; };
+		49C585572187DF3B000C96AC /* DZRTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRTrack.h; sourceTree = "<group>"; };
+		49C585582187DF3B000C96AC /* DZRFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRFolder.h; sourceTree = "<group>"; };
+		49C585592187DF3B000C96AC /* DZRPlayableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRPlayableArray.h; sourceTree = "<group>"; };
+		49C5855A2187DF3B000C96AC /* DZRComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRComment.h; sourceTree = "<group>"; };
+		49C5855B2187DF3B000C96AC /* DeezerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeezerConnect.h; sourceTree = "<group>"; };
+		49C5855C2187DF3B000C96AC /* DZRGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRGenre.h; sourceTree = "<group>"; };
+		49C5855D2187DF3B000C96AC /* NSError+DZRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DZRModel.h"; sourceTree = "<group>"; };
+		49C5855E2187DF3B000C96AC /* DZRAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRAlbum.h; sourceTree = "<group>"; };
+		49C5855F2187DF3B000C96AC /* DZREditorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZREditorial.h; sourceTree = "<group>"; };
+		49C585602187DF3B000C96AC /* DZRObjectList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRObjectList.h; sourceTree = "<group>"; };
+		49C585612187DF3B000C96AC /* DZRResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DZRResources.bundle; sourceTree = "<group>"; };
+		49C585632187DF3B000C96AC /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
+		49C585642187DF3B000C96AC /* menu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = menu.html; sourceTree = "<group>"; };
+		49C585652187DF3B000C96AC /* userguide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = userguide.pdf; sourceTree = "<group>"; };
+		49C585D82187E3E5000C96AC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		49C585DA2187E3FB000C96AC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49C585DC2187E419000C96AC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		49C585DE2187E465000C96AC /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		49C585E02187E475000C96AC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		49C585E52187EA59000C96AC /* ArtistFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistFeed.swift; sourceTree = "<group>"; };
+		49C585E82187EE5C000C96AC /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49C584232187DD09000C96AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C585E12187E475000C96AC /* MediaPlayer.framework in Frameworks */,
+				49C585DF2187E465000C96AC /* libicucore.tbd in Frameworks */,
+				49C585DD2187E419000C96AC /* SystemConfiguration.framework in Frameworks */,
+				49C585DB2187E3FB000C96AC /* AudioToolbox.framework in Frameworks */,
+				49C585D92187E3E5000C96AC /* CoreAudio.framework in Frameworks */,
+				49C585D22187DF3C000C96AC /* libDeezer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C584372187DD0D000C96AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49C5841D2187DD09000C96AC = {
+			isa = PBXGroup;
+			children = (
+				49C585402187DF3B000C96AC /* DeezerSDK */,
+				49C585622187DF3B000C96AC /* DeezerSDKDoc */,
+				49C584282187DD09000C96AC /* lindembergsPlayer */,
+				49C5843D2187DD0D000C96AC /* lindembergsPlayerTests */,
+				49C584272187DD09000C96AC /* Products */,
+				49C585D72187E3E5000C96AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49C584272187DD09000C96AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49C584262187DD09000C96AC /* lindembergsPlayer.app */,
+				49C5843A2187DD0D000C96AC /* lindembergsPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49C584282187DD09000C96AC /* lindembergsPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				49C585E72187EE44000C96AC /* Entities */,
+				49C585E42187E992000C96AC /* UI */,
+				49C584292187DD09000C96AC /* AppDelegate.swift */,
+				49C584302187DD0C000C96AC /* Assets.xcassets */,
+				49C584322187DD0C000C96AC /* LaunchScreen.storyboard */,
+				49C584352187DD0C000C96AC /* Info.plist */,
+			);
+			path = lindembergsPlayer;
+			sourceTree = "<group>";
+		};
+		49C5843D2187DD0D000C96AC /* lindembergsPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				49C5843E2187DD0D000C96AC /* lindembergsPlayerTests.swift */,
+				49C584402187DD0D000C96AC /* Info.plist */,
+			);
+			path = lindembergsPlayerTests;
+			sourceTree = "<group>";
+		};
+		49C585402187DF3B000C96AC /* DeezerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				49C585412187DF3B000C96AC /* libDeezer.a */,
+				49C585422187DF3B000C96AC /* include */,
+				49C585612187DF3B000C96AC /* DZRResources.bundle */,
+			);
+			path = DeezerSDK;
+			sourceTree = "<group>";
+		};
+		49C585422187DF3B000C96AC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				49C585432187DF3B000C96AC /* DZRPlaylist.h */,
+				49C585442187DF3B000C96AC /* Deezer+Compatibility.h */,
+				49C585452187DF3B000C96AC /* DeezerConnect+Compatibility.h */,
+				49C585462187DF3B000C96AC /* DeezerRequestDelegate.h */,
+				49C585472187DF3B000C96AC /* DZRPodcast.h */,
+				49C585482187DF3B000C96AC /* DZRArtist.h */,
+				49C585492187DF3B000C96AC /* DZREpisode.h */,
+				49C5854A2187DF3B000C96AC /* DZRPlayer.h */,
+				49C5854B2187DF3B000C96AC /* NSBundle+DZRBundle.h */,
+				49C5854C2187DF3B000C96AC /* DZRObject+Compatibility.h */,
+				49C5854D2187DF3B000C96AC /* DZRGenericCancelable.h */,
+				49C5854E2187DF3B000C96AC /* DZRModel.h */,
+				49C5854F2187DF3B000C96AC /* DZRCancelable.h */,
+				49C585502187DF3B000C96AC /* DZRObject.h */,
+				49C585512187DF3B000C96AC /* DZRNetworkRequest.h */,
+				49C585522187DF3B000C96AC /* DZRManagedRadio.h */,
+				49C585532187DF3B000C96AC /* NSError+DZRPlayer.h */,
+				49C585542187DF3B000C96AC /* DZRRequestManager.h */,
+				49C585552187DF3B000C96AC /* DZRRadio.h */,
+				49C585562187DF3B000C96AC /* DZRUser.h */,
+				49C585572187DF3B000C96AC /* DZRTrack.h */,
+				49C585582187DF3B000C96AC /* DZRFolder.h */,
+				49C585592187DF3B000C96AC /* DZRPlayableArray.h */,
+				49C5855A2187DF3B000C96AC /* DZRComment.h */,
+				49C5855B2187DF3B000C96AC /* DeezerConnect.h */,
+				49C5855C2187DF3B000C96AC /* DZRGenre.h */,
+				49C5855D2187DF3B000C96AC /* NSError+DZRModel.h */,
+				49C5855E2187DF3B000C96AC /* DZRAlbum.h */,
+				49C5855F2187DF3B000C96AC /* DZREditorial.h */,
+				49C585602187DF3B000C96AC /* DZRObjectList.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		49C585622187DF3B000C96AC /* DeezerSDKDoc */ = {
+			isa = PBXGroup;
+			children = (
+				49C585632187DF3B000C96AC /* home.html */,
+				49C585642187DF3B000C96AC /* menu.html */,
+				49C585652187DF3B000C96AC /* userguide.pdf */,
+			);
+			path = DeezerSDKDoc;
+			sourceTree = "<group>";
+		};
+		49C585D72187E3E5000C96AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C585E02187E475000C96AC /* MediaPlayer.framework */,
+				49C585DE2187E465000C96AC /* libicucore.tbd */,
+				49C585DC2187E419000C96AC /* SystemConfiguration.framework */,
+				49C585DA2187E3FB000C96AC /* AudioToolbox.framework */,
+				49C585D82187E3E5000C96AC /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49C585E42187E992000C96AC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				49C585E52187EA59000C96AC /* ArtistFeed.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		49C585E72187EE44000C96AC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				49C585E82187EE5C000C96AC /* Artist.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49C584252187DD09000C96AC /* lindembergsPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C584432187DD0D000C96AC /* Build configuration list for PBXNativeTarget "lindembergsPlayer" */;
+			buildPhases = (
+				49C584222187DD09000C96AC /* Sources */,
+				49C584232187DD09000C96AC /* Frameworks */,
+				49C584242187DD09000C96AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lindembergsPlayer;
+			productName = lindembergsPlayer;
+			productReference = 49C584262187DD09000C96AC /* lindembergsPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49C584392187DD0D000C96AC /* lindembergsPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C584462187DD0D000C96AC /* Build configuration list for PBXNativeTarget "lindembergsPlayerTests" */;
+			buildPhases = (
+				49C584362187DD0D000C96AC /* Sources */,
+				49C584372187DD0D000C96AC /* Frameworks */,
+				49C584382187DD0D000C96AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49C5843C2187DD0D000C96AC /* PBXTargetDependency */,
+			);
+			name = lindembergsPlayerTests;
+			productName = lindembergsPlayerTests;
+			productReference = 49C5843A2187DD0D000C96AC /* lindembergsPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49C5841E2187DD09000C96AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Fábio Lindemberg";
+				TargetAttributes = {
+					49C584252187DD09000C96AC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					49C584392187DD0D000C96AC = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 49C584252187DD09000C96AC;
+					};
+				};
+			};
+			buildConfigurationList = 49C584212187DD09000C96AC /* Build configuration list for PBXProject "lindembergsPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49C5841D2187DD09000C96AC;
+			productRefGroup = 49C584272187DD09000C96AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49C584252187DD09000C96AC /* lindembergsPlayer */,
+				49C584392187DD0D000C96AC /* lindembergsPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49C584242187DD09000C96AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C585D62187DF3C000C96AC /* userguide.pdf in Resources */,
+				49C585D42187DF3C000C96AC /* home.html in Resources */,
+				49C585D32187DF3C000C96AC /* DZRResources.bundle in Resources */,
+				49C584342187DD0C000C96AC /* LaunchScreen.storyboard in Resources */,
+				49C584312187DD0C000C96AC /* Assets.xcassets in Resources */,
+				49C585D52187DF3C000C96AC /* menu.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C584382187DD0D000C96AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49C584222187DD09000C96AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C585E92187EE5C000C96AC /* Artist.swift in Sources */,
+				49C585E62187EA59000C96AC /* ArtistFeed.swift in Sources */,
+				49C5842A2187DD09000C96AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C584362187DD0D000C96AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C5843F2187DD0D000C96AC /* lindembergsPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49C5843C2187DD0D000C96AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49C584252187DD09000C96AC /* lindembergsPlayer */;
+			targetProxy = 49C5843B2187DD0D000C96AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49C584322187DD0C000C96AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49C584332187DD0C000C96AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49C584412187DD0D000C96AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49C584422187DD0D000C96AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49C584442187DD0D000C96AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PN6V35AZY;
+				INFOPLIST_FILE = lindembergsPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DeezerSample/DeezerSample/LibDeezer",
+					"$(PROJECT_DIR)/DeezerSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deezer.lindembergsPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49C584452187DD0D000C96AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PN6V35AZY;
+				INFOPLIST_FILE = lindembergsPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DeezerSample/DeezerSample/LibDeezer",
+					"$(PROJECT_DIR)/DeezerSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deezer.lindembergsPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49C584472187DD0D000C96AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PN6V35AZY;
+				INFOPLIST_FILE = lindembergsPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.lindembergsPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lindembergsPlayer.app/lindembergsPlayer";
+			};
+			name = Debug;
+		};
+		49C584482187DD0D000C96AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PN6V35AZY;
+				INFOPLIST_FILE = lindembergsPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fabio.lindembergsPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lindembergsPlayer.app/lindembergsPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49C584212187DD09000C96AC /* Build configuration list for PBXProject "lindembergsPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C584412187DD0D000C96AC /* Debug */,
+				49C584422187DD0D000C96AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C584432187DD0D000C96AC /* Build configuration list for PBXNativeTarget "lindembergsPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C584442187DD0D000C96AC /* Debug */,
+				49C584452187DD0D000C96AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C584462187DD0D000C96AC /* Build configuration list for PBXNativeTarget "lindembergsPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C584472187DD0D000C96AC /* Debug */,
+				49C584482187DD0D000C96AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49C5841E2187DD09000C96AC /* Project object */;
+}
