@@ -11,15 +11,12 @@ import UIKit
 class ViewArtistDetail: UIViewController {
 
     var artist: Artist!
-    let svMain: UIStackView = UIStackView()
+    
+    let svMain = UIStackView()
     var imArtist = UIImageView()
     var lbArtistName = UILabel()
     var lbArtistGenre = UILabel()
-    var tvSongs: UITableView = {
-        var tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
+    var tvSongs = UITableView()
 
     init(artist: Artist) {
         super.init(nibName: nil, bundle: nil)
@@ -40,29 +37,17 @@ class ViewArtistDetail: UIViewController {
         setupUI()
     }
     
-    func setupUI2(){
-        
-        self.title = "Artist"
-        self.view.backgroundColor = UIColor.white
-
-        
-        view.addSubview(imArtist)
-        
-    }
-    
     func setupUI(){
         
         self.title = "Artist"
         self.view.backgroundColor = UIColor.white
-        //tfArtistName.textColor = UIColor.white
+        
         lbArtistName.textAlignment = .center
         lbArtistName.font = UIFont.boldSystemFont(ofSize: 20)
         
         lbArtistGenre.textColor = UIColor.black
         lbArtistGenre.textAlignment = .center
         
-        
-        //if let window = UIApplication.shared.keyWindow {
         view.addSubview(svMain)
         svMain.translatesAutoresizingMaskIntoConstraints = false
         svMain.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16).isActive = true
@@ -79,39 +64,19 @@ class ViewArtistDetail: UIViewController {
         tvSongs.dataSource = self
 
         view.addSubview(tvSongs)
+        tvSongs.translatesAutoresizingMaskIntoConstraints = false
         tvSongs.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
         tvSongs.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tvSongs.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         tvSongs.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
-        //svMain.addArrangedSubview(tvSongs)
-        
-        //tvSongs.leadingAnchor.constraint(equalTo: svMain.arrangedSubviews[3].leadingAnchor).isActive = true
-        //tvSongs.trailingAnchor.constraint(equalTo: svMain.arrangedSubviews[3].trailingAnchor).isActive = true
-        //tvSongs.topAnchor.constraint(equalTo: svMain.arrangedSubviews[3].topAnchor).isActive = true
-        //tvSongs.bottomAnchor.constraint(equalTo: svMain.arrangedSubviews[3].bottomAnchor).isActive = true
-        //tvSongs.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        //tvSongs.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        //t//vSongs.centerXAnchor.constraint(equalTo: svMain.arrangedSubviews[3].centerXAnchor).isActive = true
-        //tvSongs.centerYAnchor.constraint(equalTo: svMain.arrangedSubviews[3].centerYAnchor).isActive = true
-
         imArtist.translatesAutoresizingMaskIntoConstraints = false
         imArtist.widthAnchor.constraint(equalToConstant: 200).isActive = true
         imArtist.heightAnchor.constraint(equalToConstant: 200).isActive = true
         imArtist.centerXAnchor.constraint(equalTo: svMain.arrangedSubviews[0].centerXAnchor).isActive = true
         imArtist.centerYAnchor.constraint(equalTo: svMain.arrangedSubviews[0].centerYAnchor).isActive = true
         
-
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-     }
-    */
+    }	
 
 }
 
