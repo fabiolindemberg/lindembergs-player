@@ -17,6 +17,7 @@ class ViewArtistFeed: UITableViewController {
         super.viewDidLoad()
         setupView()
         tableView.reloadData()
+        self.title = "Artists"
         
     }
     
@@ -46,6 +47,10 @@ extension ViewArtistFeed {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let artistDetail = ViewArtistDetail(artist: artists[indexPath.item])
+        self.navigationController?.pushViewController(artistDetail, animated: true)
+    }
     
 }
 

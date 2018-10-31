@@ -11,26 +11,29 @@ class Song {
   }
   
   static func loadSOADSongs() -> [Song]{
-    var ler songs = [Song]()
-    songs.append(Song(1, "Tentative"))
-    songs.append(Song(2, "Toxity"))
-    songs.append(Song(3, "Suggestions"))
+    var songs = [Song]()
+    songs.append(Song(id: 1, name: "Tentative"))
+    songs.append(Song(id: 2, name: "Toxity"))
+    songs.append(Song(id: 3, name: "Suggestions"))
+    return songs
   }
   
   static func loadRATMSongs() -> [Song]{
-    var ler songs = [Song]()
-    songs.append(Song(1, "Calm Lika a Bomb"))
-    songs.append(Song(2, "Bullet in the Head"))
-    songs.append(Song(3, "Ashes in the Fall"))
-    songs.append(Song(4, "Settle for Nothing"))
-    songs.append(Song(5, "Freedom"))
-    songs.append(Song(6, "Mic Check"))
-    songs.append(Song(7, "Bulls On Parade"))
+    var songs = [Song]()
+    songs.append(Song(id: 1, name: "Calm Lika a Bomb"))
+    songs.append(Song(id: 2, name: "Bullet in the Head"))
+    songs.append(Song(id: 3, name: "Ashes in the Fall"))
+    songs.append(Song(id: 4, name: "Settle for Nothing"))
+    songs.append(Song(id: 5, name: "Freedom"))
+    songs.append(Song(id: 6, name: "Mic Check"))
+    songs.append(Song(id: 7, name: "Bulls On Parade"))
+    return songs
   }
   
   static func loadNorahSongs() -> [Song]{
-    var ler songs = [Song]()
-    songs.append(Song(1, "It Was You"))
+    var songs = [Song]()
+    songs.append(Song(id: 1, name: "It Was You"))
+    return songs
   }
   
 }
